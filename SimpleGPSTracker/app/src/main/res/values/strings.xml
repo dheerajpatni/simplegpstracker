@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_maps">Map</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="add_friend">Enter Mobile number of our person.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_section1">Map</string>
+    <string name="title_section2">Add Frend</string>
+    <string name="title_section3">Friends</string>
+    <string name="title_section4">Notifications</string>
+
+    <string-array name="titles">
+        <item>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.</item>
+        <item>Tutorials</item>
+        <item>My Apps</item>
+        <item>OS Versions</item>
+        <item>Tools</item>
+        <item>About Us</item>
+    </string-array>
+
+    <array name="icons">
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+    </array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>
