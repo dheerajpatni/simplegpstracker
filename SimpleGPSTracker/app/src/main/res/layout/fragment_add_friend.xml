@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view_add_friend"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFriendText"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btn_CANCEL"
+        android:layout_below="@+id/addFriendText"
+        android:layout_toStartOf="@+id/btn_OK" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btn_OK"
+        android:layout_alignTop="@+id/btn_CANCEL"
+        android:layout_alignEnd="@+id/addFriendText" />
+
+    <TextView
+        android:text="@string/add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/addFriendText"
+        android:layout_alignEnd="@+id/btn_OK"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/addFriendErrorText"
+        android:layout_below="@+id/btn_CANCEL"
+        android:layout_alignStart="@+id/addFriendText"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dheeraj.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <!-- Creating Permission to receive Google Maps -->
+    <permission
+        android:name="android.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <!-- Permission to receive Google Maps -->
+    <uses-permission android:name="android.permission.MAPS_RECEIVE" />
+
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+ <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+ <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/app_icon"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="User Profile"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PROFILE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddFriendActivity"
+            android:label="Add new Friend"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PROFILE" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".LocationService" >
+        </service>
+
+        <receiver
+            android:name=".LaunchReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.proofbydesign.homeboy.ACTION_PULSE_SERVER_ALARM" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.proofbydesign.homeboy.NOTIFICATIONS_ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+    </application>
+
+</manifest>

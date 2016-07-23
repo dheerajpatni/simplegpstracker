@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheeraj.myapplication.UserProfileActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/textUsername"
+        android:text="DHEERAJ PATNI"
+        android:layout_gravity="top|left|center_horizontal"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:textSize="25sp"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/textUsername"
+        android:layout_alignStart="@+id/textUsername"
+        android:layout_alignWithParentIfMissing="false"
+        android:background="@drawable/no_pic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:textSize="10dp"
+        android:background="#ffffff"
+        android:minWidth="80dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile :"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9711761019"
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="10sp"
+        android:textColorHighlight="#fffff8d5"
+        android:textColorHint="#ffff5f4a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:id="@+id/textView6"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView4"
+        android:layout_toStartOf="@+id/textView5"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dheerajpatni@gmail.com"
+        android:id="@+id/textView7"
+        android:textSize="20dp"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
